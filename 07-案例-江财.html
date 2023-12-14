@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #ccc;
+        font-family: 'Microsoft YaHei';
+        font-size: 14px;
+      }
+
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      /* 两行显示省略号 */
+      .text-ellipsisl2 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        /*弹性伸缩盒子模型显示*/
+        display: -webkit-box;
+
+        /*限制在一个块元素显示的文本的行数*/
+        -webkit-line-clamp: 2;
+
+        /*设置或检索伸缩盒对象的子元素的排列方式*/
+        -webkit-box-orient: vertical;
+      }
+
+      .box {
+        width: 388px;
+        height: 200px;
+        background-color: #fff;
+        margin: 50px auto;
+        padding: 30px 30px 30px 21px;
+      }
+
+      .box .title {
+        font-size: 16px;
+        color: #333;
+      }
+
+      .box .title a:hover {
+        color: #8a1b21;
+
+        /* 鼠标是手的形状 */
+        cursor: pointer;
+      }
+
+      .box .middle div {
+        /* 转成行内块 */
+        display: inline-block;
+      }
+
+      .box .middle {
+        height: 18px;
+        line-height: 18px;
+        margin-top: 26px;
+        /* background-color: #ccc; */
+      }
+
+      .box .middle img {
+        position: relative;
+        top: 2px;
+      }
+
+      .box .text {
+        height: 38px;
+        margin-top: 24px;
+        color: #808080;
+      }
+
+      .box .middle .date {
+        padding-left: 10px;
+        color: #808080;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="title">
+        <a href="https://www.jxvc.jx.cn/info/1056/14923.htm" target="_blank"
+          >学校召开2023-2024-1学期第二次教务会</a
+        >
+      </div>
+      <div class="middle">
+        <img src="./images/date-icon.png" alt="" />
+        <span class="date">2023-9-14</span>
+      </div>
+      <div class="text text-ellipsisl2">
+        9月12日上午，学校在综合楼1201会议室召开2023-2024-1学期第二次教务会。党委书记刘彪文出席会议并讲话，党委委员、副校长冯弋江，二级学院、教务处相关部门负责同志以及双高项目建设专班同志参加会议。刘彪文指出，职业教育作为一种类型教育,要深刻认识产教融合在现代职业教育体系建设改革中的重大意义，也要清醒地看到当前在产教融合过程中职业院校教师在业务能力等方面存在的问题和不足。作为学校办学主体的二级学院，要进一...
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        width: 147px;
+        height: 133px;
+        border: 1px solid green;
+        /* 背景图(如果背景图比容器要小，默认xy会平铺) */
+        /* 背景图平铺方式 */
+        background: url(./images/pig.jpg) no-repeat;
+      }
+
+      .wrap2 {
+        width: 300px;
+        height: 300px;
+        border: 1px solid red;
+        /* cover等比例缩放背景图会铺满整个容器 */
+
+        background: url(./images/pig.jpg) no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        背景占满整个容器方式：
+        1. 将容器宽高和容器设置一样(保留背景原大小).
+        2. 将背景图进行放大 background-size
+     -->
+    <div class="wrap"></div>
+    <div class="wrap2"></div>
+  </body>
+</html>

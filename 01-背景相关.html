@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+
+      .wrap {
+        width: 300px;
+        height: 300px;
+        border: 1px solid green;
+        /* 背景图(如果背景图比容器要小，默认xy会平铺) */
+        background-image: url(./images/pig.jpg);
+        /* 背景图平铺方式 */
+        background-repeat: no-repeat;
+      }
+
+      .wrap2 {
+        width: 300px;
+        height: 300px;
+        border: 1px solid green;
+        /* 背景图(如果背景图比容器要小，默认xy会平铺) */
+        /* 背景图平铺方式 */
+        background: url(./images/pig.jpg) no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>背景色</h3>
+    <div id="box"></div>
+    <h3>背景图</h3>
+    <div class="wrap"></div>
+    <div class="wrap2"></div>
+  </body>
+</html>
